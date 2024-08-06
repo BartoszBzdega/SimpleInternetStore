@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <!-- zrobione z uzyciem bazy danych MySQL i serwera PHP w Xampp-->
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Generic internet store</title>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- Pokaz slajdow na glownej stronie ktorego uzylem, link: https://swiperjs.com -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+    <div class="heading">
+        <div class="left-heading">
+            <div class="logo">
+                <a href="index.html"><img src="../images/placeholder-logo.png"></a>
+            </div>
+            <div class="search-bar">
+                <form class="search-form">
+                    <input type="search" name="search" placeholder="search">   
+                    <input type="submit" name="submit" placeholder="submit">   
+                </form>
+            </div>
+        </div>
+            <div class="right-heading">
+                <div class="login-status">
+                    <!-- stronka z ikonkami ktore uzylem: https://fontawesome.com/icons --> 
+                    <div class="login" title="login">
+                        <img src="../images/right-to-bracket-solid.svg" style="height:auto;width:40px;">
+                    </div>
+                    <div class="register" title="register">
+                        <img src="../images/user-plus-solid.svg" style="height:auto;width:40px;">
+                    </div>
+                    <div class="logout" title="logout">
+                        <img src="../images/right-from-bracket-solid.svg" style="height:auto;width:40px;">
+                    </div>
+                    <div class="logged-user" title="logged user">
+                        <img src="../images/user-check-solid.svg" style="height:auto;width:40px;">
+                        <span class="username">username</span>
+                    
+                    </div>
+                </div>
+                <div class="cart"><img src="../images/cart-shopping-solid.svg" style="height:auto;width:26px;"></div>
+            </div>
+    </div>
+    <div class="navigation"></div>
+
+    </header>
+    <main>
+        <section class="banner"> <!--obrazki do bannera zostaly wygenerowane przez AI -->
+            <div class="swiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="featured-products"> <!-- obrazki to placeholdery, są tylko żeby były -->
+            <h2>Featured Products</h2>
+        </section>
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
+        </section>
+    </main>
+    <footer>
+        <!-- zrobione żeby cos bylo na stopce-->
+        <div class="social-share">
+            <ul>
+             <li><img src="../images/facebook.svg" style="height:auto;width:20px;"></li>   
+             <li><img src="../images/instagram.svg" style="height:auto;width:20px;"></li>   
+             <li><img src="../images/youtube.svg" style="height:auto;width:20px;"></li>   
+            </ul>
+        </div>
+        <div class="general-info">
+            <div class="help">
+            <h3>Help</h3>
+                <ul>
+                    <li>Frequently Asked Questions</li>
+                    <li>Delivery info</li>
+                    <li>Returns</li>
+                    <li>Recall product</li>
+                    <li>Customer Service</li>
+                </ul>
+            </div>
+            <div class="store-location">
+                <h3>Our stores</h3>
+                <ul>
+                <li>Szczecin</li>
+                <li>Warszawa</li>
+                <li>Wroclaw</li>
+                <li>Gdansk</li>
+                <li>Krakow</li>
+
+
+                </ul>
+            </div>
+            <div class="legal">
+                <h3>privacy policy</h3>
+                <ul>
+                <li>conditions</li>
+                <li>costam</li>
+                <li>costam</li>
+                <li>costam</li>
+                </ul>
+            </div>
+        
+        </div>
+    </footer>
+    <script src="global.js"></script>
+    <script src="login.js"></script>
+    <script src="register.js"></script>
+    <script src="cart.js"></script>
+
+</body>
+</html>
